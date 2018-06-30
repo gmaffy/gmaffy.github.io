@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Currency Convertor</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<script src="js/idb.js"></script>
+<script src="js/main.js"></script>
+
+<body>
+  <main role="main" class="container">
+    <h1 style="text-align: center; color: blue">Currency Conversion App</h1>
+    <div class="wrapper">
+      <h2>Convert your currency</h2>
+      <div id="currency1">
+        <div class="inputs" style="display: inline-block; vertical-align: top;">
+          <input type="text" value="1" name="CURR_FR_VAL" id="CURR_FR_VAL" placeholder="Enter amount" />
+        </div>
+        <div class="choose-options" style="display: inline-block; vertical-align: top;">
+          <select id="CURR_FR" class="postfix">
+          </select>
+        </div>
+      </div>
+      
+      <p></p>
+      
+      <div id="currency2">
+        <div class="result" style="display: inline-block; vertical-align: top;">
+          <input type="text" id="CURR_VAL" readonly placeholder="---" style="background-color: #eee; font-weight: bold;" />
+        </div>
+        <div class="choose-options" style="display: inline-block; vertical-align: top;">
+          <select id="CURR_TO" class="postfix">
+            
+          </select>
+        </div>
+      </div>
+      
+      <div class="btn_div">
+        <button onclick="convertCur()" class="button">Convert</button>
+      </div>
+      <p></p>
+      <p style="text-align: center" id="status_message"></p>
+      <p style="text-align: center" id="conv_from"></p>
+    </div>
+    <p></p>
+    <footer style= "text-align: center; font-size: 12pt"><strong>by Godwin Mafireyi (2018)</strong></footer>
+  </main>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
