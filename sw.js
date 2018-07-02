@@ -5,7 +5,7 @@ self.addEventListener('install', function (event) {
             return cache.addAll([
                 '/',
                 'js/main.js',
-                'js/idb.js'
+                'js/idb.js',
                 'css/style.css',
             
             ]);
